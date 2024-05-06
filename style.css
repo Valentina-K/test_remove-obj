@@ -1,0 +1,34 @@
+body {
+  height: 95vh;
+  background-color: #18191c;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  margin: auto;
+  border: 25px solid #3c67ea;
+  outline: 1px solid #665610;
+  outline-offset: -26px;
+  background: linear-gradient(to top, #665610 1px, transparent 1px) repeat 0 0 /
+      100% 75px,
+    linear-gradient(to right, #665610 1px, transparent 1px) repeat 0 0 / 75px
+      100%;
+}
+
+.element {
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #ffd829;
+  --x: 0px;
+  --y: 0px;
+  transform: translate(var(--x), var(--y));
+  cursor: grab;
+}
